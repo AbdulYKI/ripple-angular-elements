@@ -1,0 +1,22 @@
+p {
+  font-family: Lato;
+}
+
+span {
+  border-radius: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  animation: ripple 600ms forwards;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 20px;
+}
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

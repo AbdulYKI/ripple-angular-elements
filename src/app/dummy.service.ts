@@ -1,0 +1,13 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class DummyService {
+  constructor(private http: HttpClient) {}
+
+  getDummyData() {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  }
+}

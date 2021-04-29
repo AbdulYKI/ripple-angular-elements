@@ -1,0 +1,21 @@
+<div
+  (click)="onclick($event)"
+  style="background: #deae66; width: 100%; height: 100vh; position: relative"
+>
+  <span
+    (click)="onclickOfSpan($event, c)"
+    *ngFor="let c of clicks"
+    [style]="spanStyle(c)"
+  >
+    &nbsp;
+  </span>
+</div>
+
+<button
+  mat-raised-button
+  color="primary"
+  style="margin-top: 10px; margin-bottom: 10px"
+  (click)="printDummyData()"
+>
+  print dummy data in the console
+</button>
